@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link Workshop</title>
+    <style>
+         * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+         }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: antiquewhite;
+            line-height: 1.6;
+        }
+        .container {
+            width: 1200px;
+            //background-color: rgb(255, 0, 174);
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: rgb(237, 138, 234);
+        }
+
+        .sub-header {
+            text-align: center;
+            color: rgb(101, 101, 101);
+            margin-bottom: 20px;
+        }
+
+        .external-link,
+        .internal-link,
+        .email-link,
+        .download-link,
+        .button-link,
+        .image-image {}
+
+        .internal-link {}
+
+        .email-link {}
+
+        .card1 , .card2 {
+            background-color: rgb(245, 172, 243);
+            margin-bottom: 25px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .card1.bordercolor-1 {border-top: 4px solid rgb(28, 111, 206);}
+        .card1.bordercolor-2 {border-top: 4px solid rgb(80, 139, 29);}
+        .card1.bordercolor-3 {border-top: 4px solid rgb(207, 216, 32);}
+        .card1.bordercolor-4 {border-top: 4px solid rgb(201, 15, 21);}
+        .card1.bordercolor-5 {border-top: 4px solid rgb(235, 98, 12);}
+        .card1.bordercolor-6 {border-top: 4px solid rgb(220, 40, 163);}
+        pre {
+            background: #f1f1f1;
+ padding: 10px;
+ overflow-x: auto;
+ border-left: #86EFAC 4px solid;
+        }
+
+        .btn-link {}
+
+        .group-btn button {}
+
+        .card2.border-shadow{
+            border: 1px solid darkmagenta;
+            box-shadow:2px 2px 5px darkcyan;
+        }
+        
+
+        code {background-color: rgb(247, 190, 236);
+        padding: 2px 4px;
+        border-radius: ;
+    }
+
+        .external-link,
+        .internal-link,
+        .email-link,
+        .download-link {
+        display: inline-block;
+        background-color: #f7e36b;
+        padding: 8px 14px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        margin-top: 6px;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
+    .download-btn:hover {
+        background-color: #f4d948;
+    }
+    .note {
+    margin-top: 16px;
+    padding: 12px 16px;
+    background: rgba(34, 197, 94, 0.08);
+    border-left: 4px solid #22C55E;
+    border-radius: 8px;
+    color: #86EFAC;
+    font-size: 14px;
+	}
+    .note::before {
+        content: "💡 ";
+    }
+    
+        .button-link,
+        .image-image {}
+
+        .internal-link {}
+
+        .email-link {}
+
+        .card {}
+    
+        .button-link,
+        .image-image {}
+
+        .internal-link {}
+
+        .email-link {}
+
+        .card {}
+
+       .link-ext a{
+            text-decoration: none;
+            color: darkblue;
+        }
+         /* Image Link */
+        .image-link img {
+            width: 260px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+        .image-link img:hover {
+            transform: scale(1.03);
+            transform r
+            box-shadow: 0 4px 12px rgba(0,0,0,0.20);
+        }
+img:hover {
+        transform: scale(0.9);
+}
+.card-grid {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 25px;
+}
+
+.yam-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.yam-box {
+  border: 2px solid #2aa6c9;
+  padding: 15px;
+  text-align: center;
+}
+
+.yam-box p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+/* ปุ่มธรรมดา */
+.yam-btn {
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+/* ปุ่ม Subscribe พิเศษ */
+.yam-subscribe {
+  background: black;
+  color: rgb(38, 221, 157);
+  border: 2px solid gold;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.yam-subscribe:hover {
+  background: gold;
+  color: rgb(227, 73, 73);
+  box-shadow: 0 0 10px rgb(107, 111, 236);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Workshop: Various Link</h1>
+        <p class="sub-header">เรียนรู้ลิงค์หลายรูปแบบ พร้อมตัวอย่างและแบบฝึกหัด</p>
+
+        <div class="card-grid">
+            <!-- Card1 -->
+             <div class="card1 bordercolor-1">
+               <h2>1.Extenal Link</h2>
+               <div class="card2 border-shadow link-ext">
+                <a href="https://www.wikipedia.org/"terget="_blank">Visit Wikipedia</a>
+                <p><code>terget="_blank"</code>เปิดลิงค์ในแท็บใหม่</p>
+               </div>
+               <div class="card2 border-shadow">
+                <a href="https://www.google.com/"terget="_self">Visit Google</a>
+                <p><code>terget="_self"</code>เปิดลิงค์ในหน้าเดิม</p>
+               </div>
+             </div>
+             <!--card 2  -->
+                <div class="card1 bordercolor-2">
+                    <h2>2.internal Links & Anchor Links</h2>
+                    <pre>
+            &lt;a href="about.html"&gt;About Us&lt;/a&gt;
+            
+            &lt;a href="#jump"&gt;jump to section&lt;/a&gt;
+            
+            &lt;h3 id="#jump"&gt;This is the jump target&lt;/h3&gt;
+                    </pre>
+                    <a href="">Click to Jump</a>
+                    <h3>This is the jump target.</h3>
+                </div>
+            
+                 <!-- card 3 -->
+               <div class="card1 bordercolor-3">
+                   <h2>3. Email Link</h2>
+                    <pre>&lt;a href="mailto:student@example.com?subject=Hello"&gt;Send an Email&lt;/a&gt;</pre>
+                    <a href="mailto:student@example.com?subject=Hello">Send an Email</a>
+               </div>
+            
+            
+                 <!-- Card4 -->
+                  <div class="card1 bordercolor-4">
+                <h2>4.Downlode Links</h2>
+                <pre>&lt;a href="files/sample.txt" download&gt;Download File&lt;/a&gt;</pre>
+                <a href="file4Download/images.jfif" download>Download Text File</a>
+                <p>ต้องมีไฟล์ในโฟเดอร์จึงดาวน์โหลดได้จริง</p>
+            </div>
+        </div>
+
+        <!-- card 5 -->
+           <div class="card1 bordercolor-5">
+            <h2> 5. Button Links</h2>
+            <p>ลิงก์ที่ออกแบบให้คล้ายปุ่ม เหมาะกับปุ่มสมัคร ปุ่มอ่านเพิ่มเติม หรือปุ่มนำทาง</p>
+            <pre>
+&lt;a href="https://www.example.com" class="btn-link"&gt;Visit Website&lt;/a&gt;
+            </pre>
+
+            <button>Visit Website</button>
+            <p>สร้างปุ่มด้วยแท็ก<code> button</code></p>
+            <pre>
+    &lt;button onclick="document.location='index.html'"&gt;HTML Tutorial&lt;/button&gt;
+    - มักใช้เมื่อลิงก์ไป หน้าในเว็บเดียวกัน
+    - ผูกกับ DOM (document) โดยตรง
+    &lt;button onclick="location.href='https://www.example.com'"&gt;Visit Website&lt;/button&gt;
+    - นิยมใช้มากกว่า
+    - เหมาะทั้งลิงก์ ภายในและภายนอกเว็บ
+    - ผูกกับ window โดยตรง
+            </pre>
+
+            <button>Visit Website</button>
+            <p>สร้างปุ่มด้วยแท็ก<code> button</code></p>
+            <pre>
+    &lt;button onclick="document.location='index.html'"&gt;HTML Tutorial&lt;/button&gt;
+    - มักใช้เมื่อลิงก์ไป หน้าในเว็บเดียวกัน
+    - ผูกกับ DOM (document) โดยตรง
+    &lt;button onclick="location.href='https://www.example.com'"&gt;Visit Website&lt;/button&gt;
+    - นิยมใช้มากกว่า
+    - เหมาะทั้งลิงก์ ภายในและภายนอกเว็บ
+    - ผูกกับ window โดยตรง
+            </pre>
+
+            <div class="yam-grid">
+
+  <div class="yam-box">
+    <p>ปุ่ม document.location</p>
+    <button class="yam-btn" onclick="document.location='index.html'"
+>
+      HTML Tutorial
+    </button>
+  </div>
+
+  <div class="yam-box">
+    <p>ปุ่ม location.href</p>
+    <button class="yam-btn" onclick="location.href='https://www.example.com'">
+      Visit Website
+    </button>
+  </div>
+  <div class="yam-box">
+    <p>ตัวอย่างปุ่มจาก https://cssnippets.shefali.dev</p>
+    <button class="yam-subscribe">SUBSCRIBE</button>
+  </div>
+
+  <div class="yam-box">
+    <p>เพิ่มขอบทอง</p>
+    <button class="yam-subscribe">SUBSCRIBE</button>
+  </div>
+
+  <div class="yam-box">
+    <p>เพิ่มเอฟเฟกต์เมื่อชี้ปุ่ม</p>
+    <button class="yam-subscribe">SUBSCRIBE</button>
+  </div>
+
+  <div class="yam-box">
+    <p>ปุ่มสีดำ ขอบทอง แสงวิ้ง</p>
+    <button class="yam-subscribe">SUBSCRIBE</button>
+  </div>
+
+</div>
+        </div>
+
+        <!-- card 6 -->
+
+        <div class="card1 bordercolor-6">
+            <h2>6. Image Link</h2>
+            <p>คลิกที่รูปภาพเพื่อเปิดลิงก์</p>
+            <pre>
+            &lt;a href="https://youtube.com"&gt;
+            &lt;img src="images/sample.jpg" width="250"&gt;
+            &lt;/a&gt;      
+            </pre>
+            <div class="image hover">
+                <a href="https://youtu.be/Zi_XLOBDo_Y?si=B2oZrdH1oYc-666Y" target="_blank">
+                    <img src="https://i.redd.it/michael-jackson-creates-the-hee-hee-v0-kphyondbpgzc1.jpg?width=1536&format=pjpg&auto=webp&s=208dc67e63ad1f5243895dfd14e94580a32e64f8" alt="รูปภาพ" width="250"></a>
+            </div>
+            <p class="note">หากต้องการไปรูปของตนเอง ต้องเก็บรูปไว้ในโฟลเดอร์ เช่น <code>images/photo.jpg</code></p>
+        </div>
+    </div>
+    
+</body>
+</html>
