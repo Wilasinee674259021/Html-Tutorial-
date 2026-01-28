@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายงานเกรด</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+         }
+        .body{
+            background-color: rgb(237, 52, 6);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+             line-height: 1.6;
+             padding: 20px;
+        }
+        .header{
+            background-color: blueviolet;
+            justify-content: center;
+            text-align: center;
+             border: 1px solid black;
+             width: 100%;
+             height: 50%;
+             color: white;
+             
+        }
+        .container{
+            background-color: blueviolet;
+        }
+        .card1{
+            background-color: white;
+            text-align: center;
+            padding: 15px;
+           
+        }
+        .card1 p{
+            background-color: bisque;
+            margin-bottom: 10px;
+            font-weight: bold;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            justify-content: center;
+        }
+        .card2{
+            background-color: brown;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            width: 600px;
+            color: white;
+            
+        }
+        .div{
+            background-color: aquamarine;
+            display: grid;
+            //grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            padding: 0 200px;
+}
+.logo{
+    gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    text-align: right;
+    float: right;
+}
+.card22{
+    background-color: white;
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    display: grid;
+    
+}
+.div0{
+ border: none;
+ padding: 8px 10px;
+ text-align: center;
+}
+.div0 p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    //display: flex; flex-direction: row;
+}
+ .card4{
+    background-color: white;
+    justify-content: center;
+            text-align: center;
+ }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>📊รายงานผลเกรด</h2>
+    </div>
+    <div class="div">
+        <!-- 1 -->
+     <div class="card1">
+        <div class="div0">
+     <p>👧ข้อมูลนักศึกษา</p>
+        </div>
+        <div class="div0">
+     <p>📊ผลการเรียน</p>
+        </div>
+        <div class="div0">
+     <p>📞ติดต่อ</p>
+        </div>
+     </div>
+
+     <!-- 2 -->
+      <div class="card22">
+      <div class="card2">
+        <H2> 👧Miss Wilasinee Janthanasot</H2>
+        <pre>
+    📚รหัสนักศึกษา : 674259021
+    👤ชื่อ-นามสกุล : นางสาววิลาสินี จันทนะโสตถิ์
+    👩‍🎓หมู่เรียน : 67/50
+    👩‍🏫อาจารย์ที่ปรึกษา : ผู่ช่วยศาสตราจารย์ ดร.อุษณีย์ ภักดีตระกูลวงศ์
+    🔗gitHub : <a href="https://github.com/Wilasinee674259021"terget="_blank">gitHub</a>
+            
+        </pre>
+</div>
+<img src="img/Wilasinee.png"class="logo">
+      </div>
+
+      
+      <!-- 3 -->
+      <div class="card3">
+        <div><p>ปี 1 เทอม 1 : </p></div>
+        <div><p>ปี 1 เทอม 2 :</p></div>
+        <div><p>ปี 2 เทอม 1 : </p></div>
+      </div>
+
+      <!-- 4 -->
+       <div class="4">
+        <p>🏆เกรดเฉลี่ยสะสม 2.03</p>
+       </div>
+    </div>
+</body>
+</html>
