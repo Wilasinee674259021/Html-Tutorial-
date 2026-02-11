@@ -175,3 +175,200 @@ a:hover {
 .hero-item .read-more:hover::after {
   margin-left: 10px;
 }
+
+/*  page  */
+
+.content-layout {
+  display: grid;
+  grid-template-columns: 2fr 0.9fr;
+  gap: 20px;
+  //background-color: rgb(236, 138, 138);
+}
+.card {
+  background-color: white;
+  border-radius: 4px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgb(122, 122, 121);
+  //margin: 15px 0;
+}
+/* post------- Main-left ---------*/
+.card + .card {
+  margin-top: 15px;
+}
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.data-circle {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(40, 124, 249);
+  border-radius: 50%;
+
+  color: white;
+  font-size: 0.65rem;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.data-day {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.post-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.header-line {
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgb(70, 70, 70);
+}
+.post-footer {
+  color: rgb(57, 129, 245);
+  font-size: 0.8rem;
+
+  border-top: 1px solid#555;
+  padding-top: 8px;
+}
+
+/* ---------- card1 ------------ */
+
+.post-image {
+  height: 200px;
+  overflow: hidden;
+
+  margin: 15px 0;
+}
+.post-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.post-detail {
+  color: rgb(74, 74, 74);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+/* table */
+.table-description {
+  font-size: 0.8rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.comparison-table {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+
+  /* border: 2px solid #fc2525; */
+  /* border-collapse: collapse; */
+  overflow: hidden;
+}
+
+.comparison-table th {
+  background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+
+  text-align: left;
+  padding: 15px;
+}
+
+.comparison-table td {
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  padding: 12px 15px;
+}
+
+.comparison-table tr:nth-child(even) td {
+  background-color: #f8f9fa;
+}
+
+.comparison-table tr:hover td {
+  background-color: #e3f2fd;
+  transition: background-color 0.3s ease;
+}
+
+.comparison-table .feature {
+  font-weight: 600;
+  color: #333;
+  background-color: #f0f4f8;
+}
+
+.comparison-table .pro {
+  color: #28a745;
+  font-weight: 500;
+}
+
+.comparison-table .con {
+  color: #dc3545;
+  font-weight: 500;
+}
+
+.comparison-table .neutral {
+  color: #6c757d;
+}
+/* ========================================================= */
+/* SIDEBAR -----Right------------------------------------------ */
+/* ========================================================= */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar .widget {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px #dee3ea;
+  padding: 15px;
+}
+
+.widget-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.widget p {
+  font-size: 0.875rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.author-photo {
+  width: 100%;
+  height: 140px;
+  background: #d9e3f0;
+  margin: 8px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 13px;
+  color: #555;
+}
+
+.btn-facebook {
+  background: #3b5998;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 3px;
+  margin-top: 5px;
+
+  display: inline-block;
+  padding: 6px 10px;
+}
