@@ -516,3 +516,54 @@ transform 0.2s ease; */
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(102, 126, 234, 0.35);
 }
+.author-photo{
+  max-width: 100%;
+  height: auto;
+}
+.h2-title{
+    font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  margin-bottom: 15px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  
+}
+.name{
+  background: linear-gradient(to bottom, #1fa97a, #36d17c);
+  color: white;
+  padding: 25px ;
+  border-radius: 10px;
+
+}
+.contact-form-main2 .form-button {
+  background: linear-gradient(45deg, #f59458, #adf9dc);
+}
+
+.contact-form-main2 .form-button:hover {
+  background: linear-gradient(45deg, #f59458, #adf9dc);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px #adf9dc(102, 126, 234, 0.35);
+}
+.contact{
+    background: linear-gradient(to bottom, #4471ef, #390159);
+  color: white;
+  padding: 25px ;
+  border-radius: 10px;
+
+}
+.contact-form-main3 .form-button{
+  background-color: #f59458;
+}
+.img-facebook{
+  width: 350px;
+  height: auto;   
+  overflow: hidden; 
+  border-radius: 10px;
+}
+.facebook{
+  padding: 10px 0;
+}
+.Sponsor{
+  padding:  10px 0;
+}
